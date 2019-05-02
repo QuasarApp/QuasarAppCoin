@@ -85,6 +85,7 @@ Makefile
 bitcoin-qt
 Bitcoin-Qt.app
 background.tiff*
+*.user*
 
 # Unit-tests
 Makefile.test
