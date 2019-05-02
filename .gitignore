@@ -97,6 +97,7 @@ qrc_*.cpp
 # Mac specific
 .DS_Store
 build
+Distro
 
 #lcov
 *.gcno
@@ -125,3 +126,7 @@ db4/
 
 # clang-check
 *.plist
+
+*.stash
+
+bitcoin-0\.18\.99/
