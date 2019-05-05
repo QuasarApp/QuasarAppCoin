@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2018 The Bitcoin Core developers
+// Copyright (c) 2016-2018 The QuasarAppcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,12 +41,12 @@ static bool WalletAppInit(int argc, char* argv[])
         return false;
     }
     if (argc < 2 || HelpRequested(gArgs)) {
-        std::string usage = strprintf("%s bitcoin-wallet version", PACKAGE_NAME) + " " + FormatFullVersion() + "\n\n" +
-                                      "wallet-tool is an offline tool for creating and interacting with Bitcoin Core wallet files.\n" +
+        std::string usage = strprintf("%s quasarappcoin-wallet version", PACKAGE_NAME) + " " + FormatFullVersion() + "\n\n" +
+                                      "wallet-tool is an offline tool for creating and interacting with QuasarAppcoin Core wallet files.\n" +
                                       "By default wallet-tool will act on wallets in the default mainnet wallet directory in the datadir.\n" +
                                       "To change the target wallet, use the -datadir, -wallet and -testnet/-regtest arguments.\n\n" +
                                       "Usage:\n" +
-                                     "  bitcoin-wallet [options] <command>\n\n" +
+                                     "  quasarappcoin-wallet [options] <command>\n\n" +
                                      gArgs.GetHelpMessage();
 
         fprintf(stdout, "%s", usage.c_str());
@@ -96,7 +96,7 @@ int main(int argc, char* argv[])
     }
 
     if (method.empty()) {
-        fprintf(stderr, "No method provided. Run `bitcoin-wallet -help` for valid methods.\n");
+        fprintf(stderr, "No method provided. Run `quasarappcoin-wallet -help` for valid methods.\n");
         return EXIT_FAILURE;
     }
 

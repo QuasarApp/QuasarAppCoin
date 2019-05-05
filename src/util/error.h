@@ -1,4 +1,4 @@
-// Copyright (c) 2010-2018 The Bitcoin Core developers
+// Copyright (c) 2010-2018 The QuasarAppcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
  * string functions. Types and functions defined here should not require any
  * outside dependencies.
  *
- * Error types defined here can be used in different parts of the bitcoin
+ * Error types defined here can be used in different parts of the quasarappcoin
  * codebase, to avoid the need to write boilerplate code catching and
  * translating errors passed across wallet/node/rpc/gui code boundaries.
  */

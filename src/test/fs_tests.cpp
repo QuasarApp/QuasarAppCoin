@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2019 The Bitcoin Core developers
+// Copyright (c) 2011-2019 The QuasarAppcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -17,13 +17,13 @@ BOOST_AUTO_TEST_CASE(fsbridge_fstream)
     fs::path tmpfile2 = tmpfolder / L"fs_tests_₿_🏃";
     {
         fsbridge::ofstream file(tmpfile1);
-        file << "bitcoin";
+        file << "quasarappcoin";
     }
     {
         fsbridge::ifstream file(tmpfile2);
         std::string input_buffer;
         file >> input_buffer;
-        BOOST_CHECK_EQUAL(input_buffer, "bitcoin");
+        BOOST_CHECK_EQUAL(input_buffer, "quasarappcoin");
     }
     {
         fsbridge::ifstream file(tmpfile1, std::ios_base::in | std::ios_base::ate);
@@ -43,13 +43,13 @@ BOOST_AUTO_TEST_CASE(fsbridge_fstream)
     }
     {
         fsbridge::ofstream file(tmpfile2, std::ios_base::out | std::ios_base::trunc);
-        file << "bitcoin";
+        file << "quasarappcoin";
     }
     {
         fsbridge::ifstream file(tmpfile1);
         std::string input_buffer;
         file >> input_buffer;
-        BOOST_CHECK_EQUAL(input_buffer, "bitcoin");
+        BOOST_CHECK_EQUAL(input_buffer, "quasarappcoin");
     }
 }
 
