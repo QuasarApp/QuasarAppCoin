@@ -130,3 +130,5 @@ db4/
 *.stash
 
 bitcoin-0\.18\.99/
+
+\.vscode/
